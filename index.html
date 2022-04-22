@@ -27,7 +27,9 @@
           <div class="contacts-nav">
             <nav class="nav-bar">
               <ul class="nav-list">
-                <li><a href="index.html" class="nav-list-item">Agencja</a></li>
+                <li>
+                  <a href="index.html" class="nav-list-item index">Agencja</a>
+                </li>
                 <li>
                   <a href="portfolio.html" class="nav-list-item">Portfolio</a>
                 </li>
@@ -69,7 +71,9 @@
           <div class="hero-header">
             <h1>EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
           </div>
-          <button type="button" class="hero-button">Zamów usługe</button>
+          <button type="button" class="hero-button" data-modal-open>
+            Zamów usługe
+          </button>
         </div>
       </section>
       <section class="articles">
@@ -137,6 +141,9 @@
             <ul class="info-list">
               <li class="info-list-item">
                 <img src="images/pc.jpg" alt="PC" width="370" height="294" />
+                <div class="image-label">
+                  <p>Aplikacje komputerowe</p>
+                </div>
               </li>
               <li class="info-list-item">
                 <img
@@ -145,6 +152,9 @@
                   width="370"
                   height="294"
                 />
+                <div class="image-label">
+                  <p>Aplikacje mobilne</p>
+                </div>
               </li>
               <li class="info-list-item">
                 <img
@@ -153,6 +163,9 @@
                   width="370"
                   height="294"
                 />
+                <div class="image-label">
+                  <p>Rozwiązania graficzne</p>
+                </div>
               </li>
             </ul>
           </section>
@@ -455,5 +468,13 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-button" data-modal-close>
+          &#215;
+        </button>
+      </div>
+    </div>
+    <script src="js/modal.js"></script>
   </body>
 </html>
